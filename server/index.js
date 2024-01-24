@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
   
 });
 mongoose
-  .connect("mongodb+srv://yasminmujawar425:Sujanm@cluster0.yomrkmz.mongodb.net/?retryWrites=true&w=majority", {
+  .connect(process.enev.mongo, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
